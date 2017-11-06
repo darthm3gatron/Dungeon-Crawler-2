@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+button {
+  -moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+  -webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: -webkit-gradient(top, #eae0c2 5%, #ccc2a6 100%);  
+  background: -moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+  background: -webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);  
+  background: -o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);  
+  background: -ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);      
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #eae0c2;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px; 
+  border: 2px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #fff; 
+}
+
+button:hover {
+  background: -webkit-gradient(top, #eae0c2 5%, #ccc2a6 100%);  
+  background: -moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+  background: -webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);  
+  background: -o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);  
+  background: -ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);      
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #ccc2a6;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.menu {
+  top: 0;
+}
+
+.startMenu-leave {
+  opacity: 1;
+}
+
+.startMenu-leave.startMenu-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
