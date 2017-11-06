@@ -107,9 +107,8 @@ const getLevelItems = (level) => {
     return mapItems;
 };
 
-const randomIndexBetweenValues = (min, max) => {
-    Math.floor((Math.random() * ((max - min) + 1)) + min);
-};
+const randomIndexBetweenValues = (min, max) => Math.floor((Math.random() * ((max - min) + 1)) + min);
+
 
 const generateLevel = (map, level) => {
   const mapItems = getLevelItems(level);

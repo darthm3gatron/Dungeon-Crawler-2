@@ -3,7 +3,7 @@ import {IMAGE_PATH} from '../../Utility';
 import Button from '../../Utility/Button';
 import PropTypes from 'prop-types';
 
-const NewGameScreen = ({startGame, top}) => {
+const NewGameScreen = ({startGame, top}) => 
     <div key="menu" className="menu" style={{
         position: 'absolute',
         backgroundColor: '#000',
@@ -29,7 +29,7 @@ const NewGameScreen = ({startGame, top}) => {
             <Button clickHandler={startGame}>Start Game</Button>
         </div>
     </div>
-};
+;
 
 NewGameScreen.propTypes = {
     startGame: PropTypes.func.isRequired,

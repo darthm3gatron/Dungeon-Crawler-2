@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const EquipmentSlot = ({id, width, height, image, altText, children}) => {
+const EquipmentSlot = ({id, width, height, image, altText, children}) => 
     <div id={id} className="iconSquare" style={{
         position: 'relative',
         display: 'flex',
@@ -17,7 +17,7 @@ const EquipmentSlot = ({id, width, height, image, altText, children}) => {
         </IconHover>
         <img src={image} alt={altText} />
     </div>
-};
+;
 
 EquipmentSlot.propTypes = {
     id: PropTypes.string.isRequired,
@@ -32,21 +32,13 @@ EquipmentSlot.defaultProps = {
     children: null
 };
 
-const IconHover = ({title, children}) => {
-    <div className="iconInfo" style={{
-        position: 'absolute',
-        background: '#000',
-        opacity: 0.6,
-        fontSize: '0.5em',
-        top: '-200px',
-        width: 200
-    }}>
-        <div style={{margin: 20, textAlign: 'left', fontSize: '2em'}}>
-            <p style={{fontSize: '1.2em', textDecoration: 'underline'}}>{{title}}</p>
+const IconHover = ({ title, children }) =>
+    <div className="iconInfo" style={{ position: 'absolute', backgroundColor: '#000', opacity: 0.6, fontSize: '0.5em', top: '-200px', width: 200 }}>
+        <div style={{ margin: 20, textAlign: 'left', fontSize: '2em' }}>
+            <p style={{ fontSize: '1.2em', textDecoration: 'underline' }}>{title}</p>
             {children}
         </div>
-    </div>
-};
+    </div>;
 
 IconHover.propTypes = {
     title: PropTypes.string.isRequired,

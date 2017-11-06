@@ -68,7 +68,7 @@ Tile.defaultProps = {
     }
 };
 
-const Monster = ({monster, healthColor}) => {
+const Monster = ({monster, healthColor}) => 
     <div>
         <span>
             <div style={{
@@ -80,7 +80,7 @@ const Monster = ({monster, healthColor}) => {
         </span>
         <img src={monster.image} alt={monster.name} />
     </div>
-};
+;
 
 Monster.propTypes = {
     monster: PropTypes.shape({

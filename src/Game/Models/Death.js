@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../Utility/Button';
 import PropTypes from 'prop-types';
 
-const DeathScreen = ({startGame, mainMenu, top}) => {
+const DeathScreen = ({startGame, mainMenu, top}) => 
     <div key="menu" className="menu" style={{
         position:'absolute',
         top,
@@ -18,7 +18,7 @@ const DeathScreen = ({startGame, mainMenu, top}) => {
             <Button clickHandler={mainMenu}>Main Menu</Button>
         </div>
     </div>
-};
+;
 
 DeathScreen.propTypes = {
     startGame: PropTypes.func.isRequired,

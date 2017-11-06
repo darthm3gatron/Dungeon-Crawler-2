@@ -5,11 +5,11 @@ const style = {
 
 };
 
-const Button = ({clickHandler, children}) => {
+const Button = ({clickHandler, children}) => 
     <button style={style} onClick={clickHandler}>
         {children}
     </button>
-};
+;
 
 Button.propTypes = {
     clickHandler: PropTypes.func,
